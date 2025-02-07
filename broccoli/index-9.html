@@ -19,6 +19,50 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .music-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+        }
+        .text {
+            font-size: 14px;
+            color: #333;
+        }
+        .highlight {
+            font-weight: bold;
+            color: blue;
+        }
+        .click {
+            font-weight: bold;
+            color: red;
+        }
+        .music-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .music-controls i {
+            font-size: 24px;
+            color: #555;
+        }
+        .play-btn {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .play-btn:hover {
+            background: darkblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -117,7 +161,7 @@
                                         <li class="menu-icon"><a href="#">Home</a>
                                             <ul class="sub-menu menu-pages-img-show ltn__sub-menu-col-2---">
                                                 <li>
-                                                    <a href="index-9.html">Home Style 09</a>
+                                                    <a href="index-9.html">Home</a>
                                                     <img src="img/home-demos/home-9.jpg" alt="#">
                                                 </li>
                                             </ul>
@@ -451,6 +495,28 @@
         </div>
     </div>
     <!-- IMAGE SLIDER AREA END -->
+
+    <!-- MUSIC -->
+    <div class="music-container">
+        <!-- Icon Musik & Tombol Play/Pause di kiri -->
+        <div class="music-controls">
+            <button id="play-music" class="play-btn"> Play</button>
+        </div>
+
+        <!-- Teks di kanan -->
+        <p class="text ps-5">
+            Sambil dengerin musik buat dapetin 
+            <span class="highlight">BEST EXPERIENCE</span> 
+            langsung <span class="click">CLICK</span> play aja 
+        </p>
+    </div>
+
+    <!-- Audio dengan lagu instrumental -->
+    <audio id="bg-music" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MUSIC END -->
     
     <!-- CATEGORY AREA START -->
     <div class="ltn__category-area section-bg-1--- pt-80 ">
@@ -472,21 +538,21 @@
                             </a>
                         </div>
                         <div class="ltn__category-item-name">
-                            <h5><a href="shop.html">Sayuran dan Buah</a></h5>
-                            <h6>(235 item)</h6>
+                            <h5><a href="shop-grid.html">Sayuran dan Buah</a></h5>
+                            <h6>(8 item)</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6 mx-5">
                     <div class="ltn__category-item ltn__category-item-3 text-center">
                         <div class="ltn__category-item-img">
-                            <a href="shop.html">
+                            <a href="shop-grid-2.html.html">
                                 <img src="img/icons/icon-img/category-2.png" alt="Image">
                             </a>
                         </div>
                         <div class="ltn__category-item-name">
                             <h5><a href="shop.html">Tanaman Hias</a></h5>
-                            <h6>(78 item)</h6>
+                            <h6>(3 item)</h6>
                         </div>
                     </div>
                 </div>
@@ -574,7 +640,7 @@
     <!-- CATEGORY AREA END -->
 
     <!-- FEATURE AREA START ( Feature - 3) -->
-    <div class="ltn__feature-area mt-100 mt--65 d-none">
+    <!-- <div class="ltn__feature-area mt-100 mt--65 d-none">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -619,7 +685,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- FEATURE AREA END -->
 
     <!-- ABOUT US AREA START -->
@@ -792,15 +858,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_1">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_1">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -839,15 +897,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_2">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_2">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -888,15 +938,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_3">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_3">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -935,15 +977,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_4">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_4">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -984,15 +1018,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_5">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_5">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1030,15 +1056,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_6">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_6">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1087,15 +1105,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_7">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_7">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1136,15 +1146,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_8">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_8">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1185,15 +1187,7 @@
                                                                 <i class="far fa-eye"></i>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal_product_9">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal_product_9">
-                                                                <i class="far fa-heart"></i></a>
-                                                        </li>
+                                                        <li><a href="https://lh6.googleusercontent.com/5rwXcJ1Awd5D-jZ8gsoQ8xSHCskrFmu5kOP9Ceo8jgjS_11zrt5kGxlJROJMLujlmVGSB2PSZKohSKHsslhZyJ0=w1280" title="Twitter"><i class="fab fa-whatsapp"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -2535,745 +2529,6 @@
     </div>
     <!-- MODAL AREA END -->
 
-    <!-- MODAL AREA START (Add To Cart Modal) -->
-    <div class="ltn__modal-area ltn__add-to-cart-modal-area">
-
-        <!-- Cart Modal product_1  -->
-        <div class="modal fade" id="add_to_cart_modal_product_1" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-1.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Cabai Keriting 250gr</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info -->
-                                         <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_2  -->
-        <div class="modal fade" id="add_to_cart_modal_product_2" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-2.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Cabai Keriting 500gr</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_3  -->
-        <div class="modal fade" id="add_to_cart_modal_product_3" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-3.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Tomat Organik 500gr</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_4  -->
-        <div class="modal fade" id="add_to_cart_modal_product_4" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-4.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Pakcoy Hidroponik 250gr</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_5  -->
-        <div class="modal fade" id="add_to_cart_modal_product_5" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-5.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Cabai Rawit 250gr</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_6  -->
-        <div class="modal fade" id="add_to_cart_modal_product_6" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-6.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Melon Hidroponik</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_7  -->
-        <div class="modal fade" id="add_to_cart_modal_product_7" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-7.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Red Majesty</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_8  -->
-        <div class="modal fade" id="add_to_cart_modal_product_8" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-8.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Aglonema</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cart Modal product_9  -->
-        <div class="modal fade" id="add_to_cart_modal_product_9" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <div class="ltn__quick-view-modal-inner">
-                             <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-9.png" alt="#">
-                                        </div>
-                                         <div class="modal-product-info">
-                                            <h5><a href="product-details.html">Keladi Putih</a></h5>
-                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
-                                            <div class="btn-wrapper">
-                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
-                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
-                                            </div>
-                                         </div>
-                                         <!-- additional-info
-                                         <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                         </div> -->
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL AREA END -->
-
-    <!-- MODAL AREA START (Wishlist Modal) -->
-    <div class="ltn__modal-area ltn__add-to-cart-modal-area">
-
-        <!-- wishlist product_1 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_1" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-1.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Cabai Keriting 250gr</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_2 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_2" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-2.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Cabai Keriting 500gr</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_3 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_3" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-3.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Tomat Organik 500gr</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_4 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_4" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-4.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Pakcoy Hidroponik 250gr</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_5 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_5" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-5.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Cabai Rawit 250gr</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_6 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_6" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-6.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Melon Hidroponik</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_7 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_7" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-7.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Red Majesty</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_8 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_8" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-8.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Aglonema</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- wishlist product_9 -->
-        <div class="modal fade" id="liton_wishlist_modal_product_9" tabindex="-1">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ltn__quick-view-modal-inner">
-                            <div class="modal-product-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="modal-product-img">
-                                            <img src="img/product/product-9.png" alt="#">
-                                        </div>
-                                        <div class="modal-product-info">
-                                        <h5><a href="product-details.html">Keladi Putih</a></h5>
-                                        <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
-                                        <div class="btn-wrapper">
-                                            <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
-                                        </div>
-                                        </div>
-                                        <!-- additional-info -->
-                                        <!-- <div class="additional-info d-none">
-                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
-                                            <div class="payment-method">
-                                                <img src="img/icons/payment.png" alt="#">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL AREA END -->
-
 </div>
 <!-- Body main wrapper end -->
 
@@ -3292,6 +2547,24 @@
     <script src="js/plugins.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+
+    <!-- MUSIC -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let audio = document.getElementById("bg-music");
+            let button = document.getElementById("play-music");
+
+            button.addEventListener("click", function() {
+                if (audio.paused) {
+                    audio.play();
+                    button.textContent = "⏸";
+                } else {
+                    audio.pause();
+                    button.textContent = "▶️";
+                }
+            });
+        });
+    </script>
   
 </body>
 </html>
